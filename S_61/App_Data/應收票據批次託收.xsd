@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="應收票據批次託收" targetNamespace="http://tempuri.org/應收票據批次託收.xsd" xmlns:mstns="http://tempuri.org/應收票據批次託收.xsd" xmlns="http://tempuri.org/應收票據批次託收.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CHKConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CHKConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.S_61.Properties.Settings.GlobalReference.Default.CHKConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="chkiTableAdapter" GeneratorDataComponentClassName="chkiTableAdapter" Name="chki" UserDataComponentName="chkiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CHKConnectionString (Settings)" DbObjectName="CHK.dbo.chki" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM dbo.chki</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="chno" DataSetColumn="chno" />
+              <Mapping SourceColumn="cono" DataSetColumn="cono" />
+              <Mapping SourceColumn="coname1" DataSetColumn="coname1" />
+              <Mapping SourceColumn="coname2" DataSetColumn="coname2" />
+              <Mapping SourceColumn="cuno" DataSetColumn="cuno" />
+              <Mapping SourceColumn="cuname2" DataSetColumn="cuname2" />
+              <Mapping SourceColumn="cuname1" DataSetColumn="cuname1" />
+              <Mapping SourceColumn="bano" DataSetColumn="bano" />
+              <Mapping SourceColumn="baname" DataSetColumn="baname" />
+              <Mapping SourceColumn="chact" DataSetColumn="chact" />
+              <Mapping SourceColumn="chline" DataSetColumn="chline" />
+              <Mapping SourceColumn="chdis" DataSetColumn="chdis" />
+              <Mapping SourceColumn="chdate1" DataSetColumn="chdate1" />
+              <Mapping SourceColumn="chdate2" DataSetColumn="chdate2" />
+              <Mapping SourceColumn="chdate3" DataSetColumn="chdate3" />
+              <Mapping SourceColumn="chmny" DataSetColumn="chmny" />
+              <Mapping SourceColumn="chstatus" DataSetColumn="chstatus" />
+              <Mapping SourceColumn="chstname" DataSetColumn="chstname" />
+              <Mapping SourceColumn="acno" DataSetColumn="acno" />
+              <Mapping SourceColumn="acname" DataSetColumn="acname" />
+              <Mapping SourceColumn="acname1" DataSetColumn="acname1" />
+              <Mapping SourceColumn="fano" DataSetColumn="fano" />
+              <Mapping SourceColumn="faname2" DataSetColumn="faname2" />
+              <Mapping SourceColumn="faname1" DataSetColumn="faname1" />
+              <Mapping SourceColumn="chomny1" DataSetColumn="chomny1" />
+              <Mapping SourceColumn="chomny2" DataSetColumn="chomny2" />
+              <Mapping SourceColumn="chomny3" DataSetColumn="chomny3" />
+              <Mapping SourceColumn="chtmny1" DataSetColumn="chtmny1" />
+              <Mapping SourceColumn="chtmny2" DataSetColumn="chtmny2" />
+              <Mapping SourceColumn="chtmny3" DataSetColumn="chtmny3" />
+              <Mapping SourceColumn="chtdate1" DataSetColumn="chtdate1" />
+              <Mapping SourceColumn="tacno" DataSetColumn="tacno" />
+              <Mapping SourceColumn="tacname" DataSetColumn="tacname" />
+              <Mapping SourceColumn="tacname1" DataSetColumn="tacname1" />
+              <Mapping SourceColumn="chdate" DataSetColumn="chdate" />
+              <Mapping SourceColumn="chmemo" DataSetColumn="chmemo" />
+              <Mapping SourceColumn="chacno" DataSetColumn="chacno" />
+              <Mapping SourceColumn="chstno" DataSetColumn="chstno" />
+              <Mapping SourceColumn="chsnd" DataSetColumn="chsnd" />
+              <Mapping SourceColumn="chflg1" DataSetColumn="chflg1" />
+              <Mapping SourceColumn="chflg2" DataSetColumn="chflg2" />
+              <Mapping SourceColumn="chdate1_1" DataSetColumn="chdate1_1" />
+              <Mapping SourceColumn="chdate2_1" DataSetColumn="chdate2_1" />
+              <Mapping SourceColumn="chdate3_1" DataSetColumn="chdate3_1" />
+              <Mapping SourceColumn="chtdate1_1" DataSetColumn="chtdate1_1" />
+              <Mapping SourceColumn="chdate_1" DataSetColumn="chdate_1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="應收票據批次託收" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="應收票據批次託收" msprop:Generator_UserDSName="應收票據批次託收">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="chki" msprop:Generator_TableClassName="chkiDataTable" msprop:Generator_TableVarName="tablechki" msprop:Generator_TablePropName="chki" msprop:Generator_RowDeletingName="chkiRowDeleting" msprop:Generator_UserTableName="chki" msprop:Generator_RowChangingName="chkiRowChanging" msprop:Generator_RowEvHandlerName="chkiRowChangeEventHandler" msprop:Generator_RowDeletedName="chkiRowDeleted" msprop:Generator_RowEvArgName="chkiRowChangeEvent" msprop:Generator_RowChangedName="chkiRowChanged" msprop:Generator_RowClassName="chkiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="chno" msprop:Generator_ColumnVarNameInTable="columnchno" msprop:Generator_ColumnPropNameInRow="chno" msprop:Generator_ColumnPropNameInTable="chnoColumn" msprop:Generator_UserColumnName="chno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cono" msprop:Generator_ColumnVarNameInTable="columncono" msprop:Generator_ColumnPropNameInRow="cono" msprop:Generator_ColumnPropNameInTable="conoColumn" msprop:Generator_UserColumnName="cono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coname1" msprop:Generator_ColumnVarNameInTable="columnconame1" msprop:Generator_ColumnPropNameInRow="coname1" msprop:Generator_ColumnPropNameInTable="coname1Column" msprop:Generator_UserColumnName="coname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coname2" msprop:Generator_ColumnVarNameInTable="columnconame2" msprop:Generator_ColumnPropNameInRow="coname2" msprop:Generator_ColumnPropNameInTable="coname2Column" msprop:Generator_UserColumnName="coname2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cuno" msprop:Generator_ColumnVarNameInTable="columncuno" msprop:Generator_ColumnPropNameInRow="cuno" msprop:Generator_ColumnPropNameInTable="cunoColumn" msprop:Generator_UserColumnName="cuno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cuname2" msprop:Generator_ColumnVarNameInTable="columncuname2" msprop:Generator_ColumnPropNameInRow="cuname2" msprop:Generator_ColumnPropNameInTable="cuname2Column" msprop:Generator_UserColumnName="cuname2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cuname1" msprop:Generator_ColumnVarNameInTable="columncuname1" msprop:Generator_ColumnPropNameInRow="cuname1" msprop:Generator_ColumnPropNameInTable="cuname1Column" msprop:Generator_UserColumnName="cuname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="bano" msprop:Generator_ColumnVarNameInTable="columnbano" msprop:Generator_ColumnPropNameInRow="bano" msprop:Generator_ColumnPropNameInTable="banoColumn" msprop:Generator_UserColumnName="bano" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="baname" msprop:Generator_ColumnVarNameInTable="columnbaname" msprop:Generator_ColumnPropNameInRow="baname" msprop:Generator_ColumnPropNameInTable="banameColumn" msprop:Generator_UserColumnName="baname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chact" msprop:Generator_ColumnVarNameInTable="columnchact" msprop:Generator_ColumnPropNameInRow="chact" msprop:Generator_ColumnPropNameInTable="chactColumn" msprop:Generator_UserColumnName="chact" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chline" msprop:Generator_ColumnVarNameInTable="columnchline" msprop:Generator_ColumnPropNameInRow="chline" msprop:Generator_ColumnPropNameInTable="chlineColumn" msprop:Generator_UserColumnName="chline" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chdis" msprop:Generator_ColumnVarNameInTable="columnchdis" msprop:Generator_ColumnPropNameInRow="chdis" msprop:Generator_ColumnPropNameInTable="chdisColumn" msprop:Generator_UserColumnName="chdis" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chdate1" msprop:Generator_ColumnVarNameInTable="columnchdate1" msprop:Generator_ColumnPropNameInRow="chdate1" msprop:Generator_ColumnPropNameInTable="chdate1Column" msprop:Generator_UserColumnName="chdate1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate2" msprop:Generator_ColumnVarNameInTable="columnchdate2" msprop:Generator_ColumnPropNameInRow="chdate2" msprop:Generator_ColumnPropNameInTable="chdate2Column" msprop:Generator_UserColumnName="chdate2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate3" msprop:Generator_ColumnVarNameInTable="columnchdate3" msprop:Generator_ColumnPropNameInRow="chdate3" msprop:Generator_ColumnPropNameInTable="chdate3Column" msprop:Generator_UserColumnName="chdate3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chmny" msprop:Generator_ColumnVarNameInTable="columnchmny" msprop:Generator_ColumnPropNameInRow="chmny" msprop:Generator_ColumnPropNameInTable="chmnyColumn" msprop:Generator_UserColumnName="chmny" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chstatus" msprop:Generator_ColumnVarNameInTable="columnchstatus" msprop:Generator_ColumnPropNameInRow="chstatus" msprop:Generator_ColumnPropNameInTable="chstatusColumn" msprop:Generator_UserColumnName="chstatus" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chstname" msprop:Generator_ColumnVarNameInTable="columnchstname" msprop:Generator_ColumnPropNameInRow="chstname" msprop:Generator_ColumnPropNameInTable="chstnameColumn" msprop:Generator_UserColumnName="chstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acno" msprop:Generator_ColumnVarNameInTable="columnacno" msprop:Generator_ColumnPropNameInRow="acno" msprop:Generator_ColumnPropNameInTable="acnoColumn" msprop:Generator_UserColumnName="acno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acname" msprop:Generator_ColumnVarNameInTable="columnacname" msprop:Generator_ColumnPropNameInRow="acname" msprop:Generator_ColumnPropNameInTable="acnameColumn" msprop:Generator_UserColumnName="acname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acname1" msprop:Generator_ColumnVarNameInTable="columnacname1" msprop:Generator_ColumnPropNameInRow="acname1" msprop:Generator_ColumnPropNameInTable="acname1Column" msprop:Generator_UserColumnName="acname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fano" msprop:Generator_ColumnVarNameInTable="columnfano" msprop:Generator_ColumnPropNameInRow="fano" msprop:Generator_ColumnPropNameInTable="fanoColumn" msprop:Generator_UserColumnName="fano" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="faname2" msprop:Generator_ColumnVarNameInTable="columnfaname2" msprop:Generator_ColumnPropNameInRow="faname2" msprop:Generator_ColumnPropNameInTable="faname2Column" msprop:Generator_UserColumnName="faname2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="faname1" msprop:Generator_ColumnVarNameInTable="columnfaname1" msprop:Generator_ColumnPropNameInRow="faname1" msprop:Generator_ColumnPropNameInTable="faname1Column" msprop:Generator_UserColumnName="faname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chomny1" msprop:Generator_ColumnVarNameInTable="columnchomny1" msprop:Generator_ColumnPropNameInRow="chomny1" msprop:Generator_ColumnPropNameInTable="chomny1Column" msprop:Generator_UserColumnName="chomny1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chomny2" msprop:Generator_ColumnVarNameInTable="columnchomny2" msprop:Generator_ColumnPropNameInRow="chomny2" msprop:Generator_ColumnPropNameInTable="chomny2Column" msprop:Generator_UserColumnName="chomny2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chomny3" msprop:Generator_ColumnVarNameInTable="columnchomny3" msprop:Generator_ColumnPropNameInRow="chomny3" msprop:Generator_ColumnPropNameInTable="chomny3Column" msprop:Generator_UserColumnName="chomny3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chtmny1" msprop:Generator_ColumnVarNameInTable="columnchtmny1" msprop:Generator_ColumnPropNameInRow="chtmny1" msprop:Generator_ColumnPropNameInTable="chtmny1Column" msprop:Generator_UserColumnName="chtmny1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chtmny2" msprop:Generator_ColumnVarNameInTable="columnchtmny2" msprop:Generator_ColumnPropNameInRow="chtmny2" msprop:Generator_ColumnPropNameInTable="chtmny2Column" msprop:Generator_UserColumnName="chtmny2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chtmny3" msprop:Generator_ColumnVarNameInTable="columnchtmny3" msprop:Generator_ColumnPropNameInRow="chtmny3" msprop:Generator_ColumnPropNameInTable="chtmny3Column" msprop:Generator_UserColumnName="chtmny3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="chtdate1" msprop:Generator_ColumnVarNameInTable="columnchtdate1" msprop:Generator_ColumnPropNameInRow="chtdate1" msprop:Generator_ColumnPropNameInTable="chtdate1Column" msprop:Generator_UserColumnName="chtdate1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tacno" msprop:Generator_ColumnVarNameInTable="columntacno" msprop:Generator_ColumnPropNameInRow="tacno" msprop:Generator_ColumnPropNameInTable="tacnoColumn" msprop:Generator_UserColumnName="tacno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tacname" msprop:Generator_ColumnVarNameInTable="columntacname" msprop:Generator_ColumnPropNameInRow="tacname" msprop:Generator_ColumnPropNameInTable="tacnameColumn" msprop:Generator_UserColumnName="tacname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tacname1" msprop:Generator_ColumnVarNameInTable="columntacname1" msprop:Generator_ColumnPropNameInRow="tacname1" msprop:Generator_ColumnPropNameInTable="tacname1Column" msprop:Generator_UserColumnName="tacname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate" msprop:Generator_ColumnVarNameInTable="columnchdate" msprop:Generator_ColumnPropNameInRow="chdate" msprop:Generator_ColumnPropNameInTable="chdateColumn" msprop:Generator_UserColumnName="chdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chmemo" msprop:Generator_ColumnVarNameInTable="columnchmemo" msprop:Generator_ColumnPropNameInRow="chmemo" msprop:Generator_ColumnPropNameInTable="chmemoColumn" msprop:Generator_UserColumnName="chmemo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chacno" msprop:Generator_ColumnVarNameInTable="columnchacno" msprop:Generator_ColumnPropNameInRow="chacno" msprop:Generator_ColumnPropNameInTable="chacnoColumn" msprop:Generator_UserColumnName="chacno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chstno" msprop:Generator_ColumnVarNameInTable="columnchstno" msprop:Generator_ColumnPropNameInRow="chstno" msprop:Generator_ColumnPropNameInTable="chstnoColumn" msprop:Generator_UserColumnName="chstno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chsnd" msprop:Generator_ColumnVarNameInTable="columnchsnd" msprop:Generator_ColumnPropNameInRow="chsnd" msprop:Generator_ColumnPropNameInTable="chsndColumn" msprop:Generator_UserColumnName="chsnd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="chflg1" msprop:Generator_ColumnVarNameInTable="columnchflg1" msprop:Generator_ColumnPropNameInRow="chflg1" msprop:Generator_ColumnPropNameInTable="chflg1Column" msprop:Generator_UserColumnName="chflg1" type="xs:boolean" minOccurs="0" />
+              <xs:element name="chflg2" msprop:Generator_ColumnVarNameInTable="columnchflg2" msprop:Generator_ColumnPropNameInRow="chflg2" msprop:Generator_ColumnPropNameInTable="chflg2Column" msprop:Generator_UserColumnName="chflg2" type="xs:boolean" minOccurs="0" />
+              <xs:element name="chdate1_1" msprop:Generator_ColumnVarNameInTable="columnchdate1_1" msprop:Generator_ColumnPropNameInRow="chdate1_1" msprop:Generator_ColumnPropNameInTable="chdate1_1Column" msprop:Generator_UserColumnName="chdate1_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate2_1" msprop:Generator_ColumnVarNameInTable="columnchdate2_1" msprop:Generator_ColumnPropNameInRow="chdate2_1" msprop:Generator_ColumnPropNameInTable="chdate2_1Column" msprop:Generator_UserColumnName="chdate2_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate3_1" msprop:Generator_ColumnVarNameInTable="columnchdate3_1" msprop:Generator_ColumnPropNameInRow="chdate3_1" msprop:Generator_ColumnPropNameInTable="chdate3_1Column" msprop:Generator_UserColumnName="chdate3_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chtdate1_1" msprop:Generator_ColumnVarNameInTable="columnchtdate1_1" msprop:Generator_ColumnPropNameInRow="chtdate1_1" msprop:Generator_ColumnPropNameInTable="chtdate1_1Column" msprop:Generator_UserColumnName="chtdate1_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="chdate_1" msprop:Generator_ColumnVarNameInTable="columnchdate_1" msprop:Generator_ColumnPropNameInRow="chdate_1" msprop:Generator_ColumnPropNameInTable="chdate_1Column" msprop:Generator_UserColumnName="chdate_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:chki" />
+      <xs:field xpath="mstns:chno" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

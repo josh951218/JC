@@ -1,0 +1,1544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8BF5262-7D4D-4059-B21B-8C47C9AEE613}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>S_61</RootNamespace>
+    <AssemblyName>JC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>JC.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\chko.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>chko.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\帳款匯入作業.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>帳款匯入作業.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\帳款匯出作業.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>帳款匯出作業.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\應收票據批次託收.cs">
+      <DependentUpon>應收票據批次託收.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\應收票據批次託收.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>應收票據批次託收.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\票額統計.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>票額統計.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\票齡分析.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>票齡分析.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\銀行存提款作業.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>銀行存提款作業.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\銀行對帳報表.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>銀行對帳報表.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\銀行資金預估作業.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>銀行資金預估作業.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\銀行轉帳作業.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>銀行轉帳作業.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\baseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\CHK.cs" />
+    <Compile Include="Basic\Common.cs" />
+    <Compile Include="Basic\FrmSetString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmSetString.Designer.cs">
+      <DependentUpon>FrmSetString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\RPT.cs" />
+    <Compile Include="JS\JSStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JS\JSStrip.Designer.cs">
+      <DependentUpon>JSStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataAccess.cs" />
+    <Compile Include="Model\Date.cs" />
+    <Compile Include="Model\FrmBuyPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmBuyPriceQuery.Designer.cs">
+      <DependentUpon>FrmBuyPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmRegist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmRegist.Designer.cs">
+      <DependentUpon>FrmRegist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\InvoPrint.cs" />
+    <Compile Include="Basic\myExtension.cs" />
+    <Compile Include="Model\PowerOfPage.cs" />
+    <Compile Include="Model\pVar.cs" />
+    <Compile Include="Basic\Security.cs" />
+    <Compile Include="Model\SetLanguage.cs" />
+    <Compile Include="Basic\SetParameter.cs" />
+    <Compile Include="Model\ForControls.cs" />
+    <Compile Include="MyControl\btnBrowT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\btnT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\FormP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FormT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyControl\CheckBoxT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\GridButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\dataGridViewT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\GroupBoxT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\Label\MenuLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\lblT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\panelT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\pnlBoxT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\radio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\radioT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\tableLayoutPnl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\Label\StatusBar1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\Label\StatusBar2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\TextBoxT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\txtNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\tableLayoutPnl_for_main.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frmreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Frmreport.designer.cs">
+      <DependentUpon>Frmreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmBackUpList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmBackUpList.Designer.cs">
+      <DependentUpon>FrmBackUpList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmDataBackUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmDataBackUP.Designer.cs">
+      <DependentUpon>FrmDataBackUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\FrmInvoSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\FrmInvoSet.Designer.cs">
+      <DependentUpon>FrmInvoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業_瀏覽.Designer.cs">
+      <DependentUpon>帳款匯入作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業.Designer.cs">
+      <DependentUpon>帳款匯入作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯入作業_列印.Designer.cs">
+      <DependentUpon>帳款匯入作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業.Designer.cs">
+      <DependentUpon>帳款匯出作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業_列印.Designer.cs">
+      <DependentUpon>帳款匯出作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\帳款匯出作業_瀏覽.Designer.cs">
+      <DependentUpon>帳款匯出作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據建檔.Designer.cs">
+      <DependentUpon>應付票據建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據建檔_瀏覽.Designer.cs">
+      <DependentUpon>應付票據建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據批次異動.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據批次異動.designer.cs">
+      <DependentUpon>應付票據批次異動.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據批次異動_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應付票據批次異動_瀏覽.designer.cs">
+      <DependentUpon>應付票據批次異動_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據建檔.Designer.cs">
+      <DependentUpon>應收票據建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據建檔_瀏覽.Designer.cs">
+      <DependentUpon>應收票據建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動.Designer.cs">
+      <DependentUpon>應收票據批次異動.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動_應收轉付.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動_應收轉付.Designer.cs">
+      <DependentUpon>應收票據批次異動_應收轉付.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動_託收兌現.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次異動_託收兌現.Designer.cs">
+      <DependentUpon>應收票據批次異動_託收兌現.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次託收.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\應收票據批次託收.Designer.cs">
+      <DependentUpon>應收票據批次託收.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析_總額表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析_總額表.Designer.cs">
+      <DependentUpon>應付票齡分析_總額表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析.Designer.cs">
+      <DependentUpon>應付票齡分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析_明細表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票齡分析_明細表.Designer.cs">
+      <DependentUpon>應付票齡分析_明細表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析_總額表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析_總額表.Designer.cs">
+      <DependentUpon>應收票齡分析_總額表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\支票列印領取作廢.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\支票列印領取作廢.Designer.cs">
+      <DependentUpon>支票列印領取作廢.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業.Designer.cs">
+      <DependentUpon>銀行存提款作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業_列印.Designer.cs">
+      <DependentUpon>銀行存提款作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行存提款作業_瀏覽.Designer.cs">
+      <DependentUpon>銀行存提款作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業.Designer.cs">
+      <DependentUpon>銀行轉帳作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業_列印.Designer.cs">
+      <DependentUpon>銀行轉帳作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_1單據作業\銀行轉帳作業_瀏覽.Designer.cs">
+      <DependentUpon>銀行轉帳作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選客戶開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選客戶開窗.Designer.cs">
+      <DependentUpon>勾選客戶開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選帳戶開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選帳戶開窗.Designer.cs">
+      <DependentUpon>勾選帳戶開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選廠商開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\勾選廠商開窗.Designer.cs">
+      <DependentUpon>勾選廠商開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\客戶票額統計.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\客戶票額統計.Designer.cs">
+      <DependentUpon>客戶票額統計.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\客戶票額統計_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\客戶票額統計_瀏覽.Designer.cs">
+      <DependentUpon>客戶票額統計_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\廠商票額統計.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\廠商票額統計.Designer.cs">
+      <DependentUpon>廠商票額統計.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\廠商票額統計_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\廠商票額統計_瀏覽.Designer.cs">
+      <DependentUpon>廠商票額統計_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票據明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票據明細.Designer.cs">
+      <DependentUpon>應付票據明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票據明細_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應付票據明細_瀏覽.Designer.cs">
+      <DependentUpon>應付票據明細_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票據明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票據明細.Designer.cs">
+      <DependentUpon>應收票據明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票據明細_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票據明細_瀏覽.Designer.cs">
+      <DependentUpon>應收票據明細_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析.Designer.cs">
+      <DependentUpon>應收票齡分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析_明細表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\應收票齡分析_明細表.Designer.cs">
+      <DependentUpon>應收票齡分析_明細表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行對帳報表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行對帳報表.Designer.cs">
+      <DependentUpon>銀行對帳報表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行對帳報表_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行對帳報表_瀏覽.Designer.cs">
+      <DependentUpon>銀行對帳報表_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業.Designer.cs">
+      <DependentUpon>銀行資金預估作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_日記表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_日記表.Designer.cs">
+      <DependentUpon>銀行資金預估作業_日記表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_明細表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_明細表.Designer.cs">
+      <DependentUpon>銀行資金預估作業_明細表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_總額日記表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_總額日記表.Designer.cs">
+      <DependentUpon>銀行資金預估作業_總額日記表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_總額明細表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_2統計圖表\銀行資金預估作業_總額明細表.Designer.cs">
+      <DependentUpon>銀行資金預估作業_總額明細表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmPhrase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmPhrase.designer.cs">
+      <DependentUpon>FrmPhrase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\人員開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\人員開窗.designer.cs">
+      <DependentUpon>人員開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\備註開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\備註開窗.designer.cs">
+      <DependentUpon>備註開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業_列印.designer.cs">
+      <DependentUpon>人員建檔作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶基本建檔_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶基本建檔_列印.designer.cs">
+      <DependentUpon>客戶基本建檔_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶開窗.designer.cs">
+      <DependentUpon>客戶開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\幣別開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\幣別開窗.Designer.cs">
+      <DependentUpon>幣別開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業_列印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業_列印.designer.cs">
+      <DependentUpon>廠商建檔作業_列印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\全省銀行建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\全省銀行建檔.Designer.cs">
+      <DependentUpon>全省銀行建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\全省銀行建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\全省銀行建檔_瀏覽.Designer.cs">
+      <DependentUpon>全省銀行建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商資料瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商資料瀏覽.designer.cs">
+      <DependentUpon>廠商資料瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商資料瀏覽_明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商資料瀏覽_明細.designer.cs">
+      <DependentUpon>廠商資料瀏覽_明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商郵遞標籤.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商郵遞標籤.designer.cs">
+      <DependentUpon>廠商郵遞標籤.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商郵遞標籤_明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商郵遞標籤_明細.designer.cs">
+      <DependentUpon>廠商郵遞標籤_明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶郵遞標籤_明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶郵遞標籤_明細.designer.cs">
+      <DependentUpon>客戶郵遞標籤_明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶郵遞標籤.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶郵遞標籤.designer.cs">
+      <DependentUpon>客戶郵遞標籤.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶資料瀏覽_明細.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶資料瀏覽_明細.designer.cs">
+      <DependentUpon>客戶資料瀏覽_明細.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶資料瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶資料瀏覽.designer.cs">
+      <DependentUpon>客戶資料瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業_瀏覽.designer.cs">
+      <DependentUpon>廠商建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商建檔作業.designer.cs">
+      <DependentUpon>廠商建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmXX03Brow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmXX03Brow.designer.cs">
+      <DependentUpon>FrmXX03Brow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmXX05Brow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmXX05Brow.designer.cs">
+      <DependentUpon>FrmXX05Brow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業_瀏覽.designer.cs">
+      <DependentUpon>人員建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶建檔作業_瀏覽.designer.cs">
+      <DependentUpon>客戶建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶建檔作業.designer.cs">
+      <DependentUpon>客戶建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmSaddr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\FrmSaddr.designer.cs">
+      <DependentUpon>FrmSaddr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\人員建檔作業.designer.cs">
+      <DependentUpon>人員建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\temp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\temp.Designer.cs">
+      <DependentUpon>temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\公司建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\公司建檔作業.Designer.cs">
+      <DependentUpon>公司建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\公司開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\公司開窗.Designer.cs">
+      <DependentUpon>公司開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\區域建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\區域建檔作業.Designer.cs">
+      <DependentUpon>區域建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\區域建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\區域建檔作業_瀏覽.Designer.cs">
+      <DependentUpon>區域建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶類別建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶類別建檔.Designer.cs">
+      <DependentUpon>客戶類別建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶類別建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\客戶類別建檔_瀏覽.Designer.cs">
+      <DependentUpon>客戶類別建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\常用片語建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\常用片語建檔.Designer.cs">
+      <DependentUpon>常用片語建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商類別建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商類別建檔.Designer.cs">
+      <DependentUpon>廠商類別建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商類別建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\廠商類別建檔_瀏覽.Designer.cs">
+      <DependentUpon>廠商類別建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\結帳類別建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\結帳類別建檔.Designer.cs">
+      <DependentUpon>結帳類別建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\結帳類別建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\結帳類別建檔_瀏覽.Designer.cs">
+      <DependentUpon>結帳類別建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\職謂建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\職謂建檔作業.Designer.cs">
+      <DependentUpon>職謂建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\職謂建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\職謂建檔作業_瀏覽.Designer.cs">
+      <DependentUpon>職謂建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣建檔作業_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣建檔作業_瀏覽.Designer.cs">
+      <DependentUpon>貨幣建檔作業_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣建檔作業.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣建檔作業.Designer.cs">
+      <DependentUpon>貨幣建檔作業.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣開窗.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\貨幣開窗.Designer.cs">
+      <DependentUpon>貨幣開窗.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\部門基本資料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\部門基本資料.Designer.cs">
+      <DependentUpon>部門基本資料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\部門基本資料_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\部門基本資料_瀏覽.Designer.cs">
+      <DependentUpon>部門基本資料_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\銀行帳號建檔.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\銀行帳號建檔.Designer.cs">
+      <DependentUpon>銀行帳號建檔.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_3基本資料\銀行帳號建檔_瀏覽.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_3基本資料\銀行帳號建檔_瀏覽.Designer.cs">
+      <DependentUpon>銀行帳號建檔_瀏覽.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_4系統維護\使用者參數設定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_4系統維護\使用者參數設定.Designer.cs">
+      <DependentUpon>使用者參數設定.cs</DependentUpon>
+    </Compile>
+    <Compile Include="s_4系統維護\系統參數設定.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="s_4系統維護\系統參數設定.Designer.cs">
+      <DependentUpon>系統參數設定.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Basic\FrmSetString.resx">
+      <DependentUpon>FrmSetString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JS\JSStrip.resx">
+      <DependentUpon>JSStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\loginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmBuyPriceQuery.resx">
+      <DependentUpon>FrmBuyPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmRegist.resx">
+      <DependentUpon>FrmRegist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App_Data\chko.xsc">
+      <DependentUpon>chko.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\chko.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>chko.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\chko.xss">
+      <DependentUpon>chko.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\帳款匯入作業.xsc">
+      <DependentUpon>帳款匯入作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\帳款匯入作業.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>帳款匯入作業.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\帳款匯入作業.xss">
+      <DependentUpon>帳款匯入作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\帳款匯出作業.xsc">
+      <DependentUpon>帳款匯出作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\帳款匯出作業.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>帳款匯出作業.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\帳款匯出作業.xss">
+      <DependentUpon>帳款匯出作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\應收票據批次託收.xsc">
+      <DependentUpon>應收票據批次託收.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\應收票據批次託收.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>應收票據批次託收.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\應收票據批次託收.xss">
+      <DependentUpon>應收票據批次託收.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\票額統計.xsc">
+      <DependentUpon>票額統計.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\票額統計.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>票額統計.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\票額統計.xss">
+      <DependentUpon>票額統計.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\票齡分析.xsc">
+      <DependentUpon>票齡分析.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\票齡分析.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>票齡分析.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\票齡分析.xss">
+      <DependentUpon>票齡分析.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行存提款作業.xsc">
+      <DependentUpon>銀行存提款作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行存提款作業.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>銀行存提款作業.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\銀行存提款作業.xss">
+      <DependentUpon>銀行存提款作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行對帳報表.xsc">
+      <DependentUpon>銀行對帳報表.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行對帳報表.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>銀行對帳報表.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\銀行對帳報表.xss">
+      <DependentUpon>銀行對帳報表.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行資金預估作業.xsc">
+      <DependentUpon>銀行資金預估作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行資金預估作業.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>銀行資金預估作業.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\銀行資金預估作業.xss">
+      <DependentUpon>銀行資金預估作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行轉帳作業.xsc">
+      <DependentUpon>銀行轉帳作業.xsd</DependentUpon>
+    </None>
+    <None Include="App_Data\銀行轉帳作業.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>銀行轉帳作業.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App_Data\銀行轉帳作業.xss">
+      <DependentUpon>銀行轉帳作業.xsd</DependentUpon>
+    </None>
+    <None Include="Report\人員基本資料.rpt" />
+    <None Include="Report\銀行轉帳作業_幣別表.rpt" />
+    <None Include="Report\支票列印領取作廢_支票.rpt" />
+    <None Include="Report\支票列印領取作廢_領款簽回單.rpt" />
+    <None Include="Report\應收票據批次異動_轉付領款簽回單.rpt" />
+    <None Include="Report\應收票據批次託收_標準表.rpt" />
+    <None Include="Report\銀行轉帳作業_標準報表.rpt" />
+    <None Include="Report\帳款匯入作業_標準報表.rpt" />
+    <None Include="Report\帳款匯出作業_標準報表.rpt" />
+    <None Include="Report\應收票據明細_內定報表.rpt" />
+    <None Include="Report\應付票據明細_內定報表.rpt" />
+    <None Include="Report\客戶票額統計_標準報表.rpt" />
+    <None Include="Report\廠商票額統計_標準報表.rpt" />
+    <None Include="Report\應收票齡分析_明細表.rpt" />
+    <None Include="Report\銀行存提款作業_標準報表.rpt" />
+    <None Include="Report\應收票齡分析_總額表.rpt" />
+    <None Include="Report\應付票齡分析_明細表.rpt" />
+    <None Include="Report\應付票齡分析_總額表.rpt" />
+    <None Include="Report\銀行對帳報表_跳頁報表.rpt" />
+    <None Include="Report\銀行對帳報表_不跳頁報表.rpt" />
+    <None Include="Report\銀行資金預估作業_不跳頁明細表.rpt" />
+    <None Include="Report\銀行資金預估作業_總額明細表.rpt" />
+    <None Include="Report\銀行資金預估作業_跳頁日記表.rpt" />
+    <None Include="Report\銀行資金預估作業_不跳頁日記表.rpt" />
+    <None Include="Report\銀行資金預估作業_跳頁明細表.rpt" />
+    <None Include="Report\銀行資金預估作業_總額日記表.rpt" />
+    <EmbeddedResource Include="s_1單據作業\帳款匯入作業_列印.resx">
+      <DependentUpon>帳款匯入作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\帳款匯入作業_瀏覽.resx">
+      <DependentUpon>帳款匯入作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\帳款匯入作業.resx">
+      <DependentUpon>帳款匯入作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\帳款匯出作業.resx">
+      <DependentUpon>帳款匯出作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\帳款匯出作業_列印.resx">
+      <DependentUpon>帳款匯出作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\帳款匯出作業_瀏覽.resx">
+      <DependentUpon>帳款匯出作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應付票據建檔.resx">
+      <DependentUpon>應付票據建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應付票據建檔_瀏覽.resx">
+      <DependentUpon>應付票據建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應付票據批次異動.resx">
+      <DependentUpon>應付票據批次異動.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應付票據批次異動_瀏覽.resx">
+      <DependentUpon>應付票據批次異動_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據建檔.resx">
+      <DependentUpon>應收票據建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據建檔_瀏覽.resx">
+      <DependentUpon>應收票據建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據批次異動.resx">
+      <DependentUpon>應收票據批次異動.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據批次異動_應收轉付.resx">
+      <DependentUpon>應收票據批次異動_應收轉付.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據批次異動_託收兌現.resx">
+      <DependentUpon>應收票據批次異動_託收兌現.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\應收票據批次託收.resx">
+      <DependentUpon>應收票據批次託收.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應付票齡分析_總額表.resx">
+      <DependentUpon>應付票齡分析_總額表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應付票齡分析.resx">
+      <DependentUpon>應付票齡分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應付票齡分析_明細表.resx">
+      <DependentUpon>應付票齡分析_明細表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應收票齡分析_總額表.resx">
+      <DependentUpon>應收票齡分析_總額表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\支票列印領取作廢.resx">
+      <DependentUpon>支票列印領取作廢.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行存提款作業.resx">
+      <DependentUpon>銀行存提款作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行存提款作業_列印.resx">
+      <DependentUpon>銀行存提款作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行存提款作業_瀏覽.resx">
+      <DependentUpon>銀行存提款作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行轉帳作業.resx">
+      <DependentUpon>銀行轉帳作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行轉帳作業_列印.resx">
+      <DependentUpon>銀行轉帳作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_1單據作業\銀行轉帳作業_瀏覽.resx">
+      <DependentUpon>銀行轉帳作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\勾選客戶開窗.resx">
+      <DependentUpon>勾選客戶開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\勾選帳戶開窗.resx">
+      <DependentUpon>勾選帳戶開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\勾選廠商開窗.resx">
+      <DependentUpon>勾選廠商開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\客戶票額統計.resx">
+      <DependentUpon>客戶票額統計.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\客戶票額統計_瀏覽.resx">
+      <DependentUpon>客戶票額統計_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\廠商票額統計.resx">
+      <DependentUpon>廠商票額統計.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\廠商票額統計_瀏覽.resx">
+      <DependentUpon>廠商票額統計_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應付票據明細.resx">
+      <DependentUpon>應付票據明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應付票據明細_瀏覽.resx">
+      <DependentUpon>應付票據明細_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應收票據明細.resx">
+      <DependentUpon>應收票據明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應收票據明細_瀏覽.resx">
+      <DependentUpon>應收票據明細_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應收票齡分析.resx">
+      <DependentUpon>應收票齡分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\應收票齡分析_明細表.resx">
+      <DependentUpon>應收票齡分析_明細表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行對帳報表.resx">
+      <DependentUpon>銀行對帳報表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行對帳報表_瀏覽.resx">
+      <DependentUpon>銀行對帳報表_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行資金預估作業.resx">
+      <DependentUpon>銀行資金預估作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行資金預估作業_日記表.resx">
+      <DependentUpon>銀行資金預估作業_日記表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行資金預估作業_明細表.resx">
+      <DependentUpon>銀行資金預估作業_明細表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行資金預估作業_總額日記表.resx">
+      <DependentUpon>銀行資金預估作業_總額日記表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_2統計圖表\銀行資金預估作業_總額明細表.resx">
+      <DependentUpon>銀行資金預估作業_總額明細表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\FrmPhrase.resx">
+      <DependentUpon>FrmPhrase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\人員開窗.resx">
+      <DependentUpon>人員開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\備註開窗.resx">
+      <DependentUpon>備註開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\人員建檔作業_列印.resx">
+      <DependentUpon>人員建檔作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶基本建檔_列印.resx">
+      <DependentUpon>客戶基本建檔_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶開窗.resx">
+      <DependentUpon>客戶開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\幣別開窗.resx">
+      <DependentUpon>幣別開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商建檔作業_列印.resx">
+      <DependentUpon>廠商建檔作業_列印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\全省銀行建檔.resx">
+      <DependentUpon>全省銀行建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\全省銀行建檔_瀏覽.resx">
+      <DependentUpon>全省銀行建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商資料瀏覽.resx">
+      <DependentUpon>廠商資料瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商資料瀏覽_明細.resx">
+      <DependentUpon>廠商資料瀏覽_明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商郵遞標籤.resx">
+      <DependentUpon>廠商郵遞標籤.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商郵遞標籤_明細.resx">
+      <DependentUpon>廠商郵遞標籤_明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶郵遞標籤_明細.resx">
+      <DependentUpon>客戶郵遞標籤_明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶郵遞標籤.resx">
+      <DependentUpon>客戶郵遞標籤.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶資料瀏覽_明細.resx">
+      <DependentUpon>客戶資料瀏覽_明細.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶資料瀏覽.resx">
+      <DependentUpon>客戶資料瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商建檔作業_瀏覽.resx">
+      <DependentUpon>廠商建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商建檔作業.resx">
+      <DependentUpon>廠商建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\FrmXX03Brow.resx">
+      <DependentUpon>FrmXX03Brow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\FrmXX05Brow.resx">
+      <DependentUpon>FrmXX05Brow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\人員建檔作業_瀏覽.resx">
+      <DependentUpon>人員建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶建檔作業_瀏覽.resx">
+      <DependentUpon>客戶建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶建檔作業.resx">
+      <DependentUpon>客戶建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\FrmSaddr.resx">
+      <DependentUpon>FrmSaddr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\人員建檔作業.resx">
+      <DependentUpon>人員建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\temp.resx">
+      <DependentUpon>temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\公司建檔作業.resx">
+      <DependentUpon>公司建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\公司開窗.resx">
+      <DependentUpon>公司開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\區域建檔作業.resx">
+      <DependentUpon>區域建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\區域建檔作業_瀏覽.resx">
+      <DependentUpon>區域建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶類別建檔.resx">
+      <DependentUpon>客戶類別建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\客戶類別建檔_瀏覽.resx">
+      <DependentUpon>客戶類別建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\常用片語建檔.resx">
+      <DependentUpon>常用片語建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商類別建檔.resx">
+      <DependentUpon>廠商類別建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\廠商類別建檔_瀏覽.resx">
+      <DependentUpon>廠商類別建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\結帳類別建檔.resx">
+      <DependentUpon>結帳類別建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\結帳類別建檔_瀏覽.resx">
+      <DependentUpon>結帳類別建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\職謂建檔作業.resx">
+      <DependentUpon>職謂建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\職謂建檔作業_瀏覽.resx">
+      <DependentUpon>職謂建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\貨幣建檔作業_瀏覽.resx">
+      <DependentUpon>貨幣建檔作業_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\貨幣建檔作業.resx">
+      <DependentUpon>貨幣建檔作業.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\貨幣開窗.resx">
+      <DependentUpon>貨幣開窗.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\部門基本資料.resx">
+      <DependentUpon>部門基本資料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\部門基本資料_瀏覽.resx">
+      <DependentUpon>部門基本資料_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\銀行帳號建檔.resx">
+      <DependentUpon>銀行帳號建檔.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_3基本資料\銀行帳號建檔_瀏覽.resx">
+      <DependentUpon>銀行帳號建檔_瀏覽.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_4系統維護\使用者參數設定.resx">
+      <DependentUpon>使用者參數設定.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="s_4系統維護\系統參數設定.resx">
+      <DependentUpon>系統參數設定.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Report\客戶資料瀏覽_內定報表.rpt">
+      <LastGenOutput>客戶資料瀏覽_內定報表.cs</LastGenOutput>
+    </None>
+    <None Include="Report\客戶郵遞標籤_信封.rpt">
+      <LastGenOutput>客戶郵遞標籤_信封.cs</LastGenOutput>
+    </None>
+    <None Include="Report\客戶郵遞標籤_1.rpt">
+      <LastGenOutput>客戶郵遞標籤_1.cs</LastGenOutput>
+    </None>
+    <None Include="Report\客戶郵遞標籤_1_5.rpt">
+      <LastGenOutput>客戶郵遞標籤_1_5.cs</LastGenOutput>
+    </None>
+    <None Include="Report\廠商資料瀏覽_內定報表.rpt">
+      <LastGenOutput>廠商資料瀏覽_內定報表.cs</LastGenOutput>
+    </None>
+    <None Include="Report\廠商郵遞標籤_信封.rpt">
+      <LastGenOutput>廠商郵遞標籤_信封.cs</LastGenOutput>
+    </None>
+    <None Include="Report\廠商郵遞標籤_1.rpt">
+      <LastGenOutput>廠商郵遞標籤_1.cs</LastGenOutput>
+    </None>
+    <None Include="Report\廠商郵遞標籤_1_5.rpt">
+      <LastGenOutput>廠商郵遞標籤_1_5.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Report\Frmreport.resx">
+      <DependentUpon>Frmreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Report\空報表.rpt">
+      <LastGenOutput>人員基本資料.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Basic\FrmBackUpList.resx">
+      <DependentUpon>FrmBackUpList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmDataBackUP.resx">
+      <DependentUpon>FrmDataBackUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\FrmInvoSet.resx">
+      <DependentUpon>FrmInvoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\進銷存系統.CHM" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Language\CN\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default1024d.bmp" />
+    <None Include="Resources\default1024.bmp" />
+    <None Include="Resources\default800d.bmp" />
+    <None Include="Resources\default800.bmp" />
+    <EmbeddedResource Include="Resources\word1024d.bmp" />
+    <EmbeddedResource Include="Resources\word1024.bmp" />
+    <EmbeddedResource Include="Resources\top1024d.bmp" />
+    <EmbeddedResource Include="Resources\top1024.bmp" />
+    <EmbeddedResource Include="Resources\save1024d.bmp" />
+    <EmbeddedResource Include="Resources\save1024.bmp" />
+    <EmbeddedResource Include="Resources\query1024d.bmp" />
+    <EmbeddedResource Include="Resources\query1024.bmp" />
+    <EmbeddedResource Include="Resources\prior1024d.bmp" />
+    <EmbeddedResource Include="Resources\prior1024.bmp" />
+    <EmbeddedResource Include="Resources\print1024d.bmp" />
+    <EmbeddedResource Include="Resources\print1024.bmp" />
+    <EmbeddedResource Include="Resources\preview1024d.bmp" />
+    <EmbeddedResource Include="Resources\preview1024.bmp" />
+    <EmbeddedResource Include="Resources\next1024d.bmp" />
+    <EmbeddedResource Include="Resources\next1024.bmp" />
+    <EmbeddedResource Include="Resources\msgbox.bmp" />
+    <EmbeddedResource Include="Resources\modify1024d.bmp" />
+    <EmbeddedResource Include="Resources\modify1024.bmp" />
+    <EmbeddedResource Include="Resources\exit1024g.bmp" />
+    <EmbeddedResource Include="Resources\exit1024d.bmp" />
+    <EmbeddedResource Include="Resources\exit1024.bmp" />
+    <EmbeddedResource Include="Resources\execute1024d.bmp" />
+    <EmbeddedResource Include="Resources\execute1024.bmp" />
+    <EmbeddedResource Include="Resources\excel1024d.bmp" />
+    <EmbeddedResource Include="Resources\excel1024.bmp" />
+    <EmbeddedResource Include="Resources\duplicate1024d.bmp" />
+    <EmbeddedResource Include="Resources\duplicate1024.bmp" />
+    <EmbeddedResource Include="Resources\delete1024d.bmp" />
+    <EmbeddedResource Include="Resources\delete1024.bmp" />
+    <EmbeddedResource Include="Resources\cancel1024d.bmp" />
+    <EmbeddedResource Include="Resources\cancel1024.bmp" />
+    <EmbeddedResource Include="Resources\brow1024d.bmp" />
+    <EmbeddedResource Include="Resources\brow1024.bmp" />
+    <EmbeddedResource Include="Resources\bottom1024d.bmp" />
+    <EmbeddedResource Include="Resources\bottom1024.bmp" />
+    <EmbeddedResource Include="Resources\append1024d.bmp" />
+    <EmbeddedResource Include="Resources\append1024.bmp" />
+    <EmbeddedResource Include="Resources\word800d.bmp" />
+    <EmbeddedResource Include="Resources\word800.bmp" />
+    <EmbeddedResource Include="Resources\top800d.bmp" />
+    <EmbeddedResource Include="Resources\top800.bmp" />
+    <EmbeddedResource Include="Resources\save800d.bmp" />
+    <EmbeddedResource Include="Resources\save800.bmp" />
+    <EmbeddedResource Include="Resources\return800d.bmp" />
+    <EmbeddedResource Include="Resources\return800.bmp" />
+    <EmbeddedResource Include="Resources\query800d.bmp" />
+    <EmbeddedResource Include="Resources\query800.bmp" />
+    <EmbeddedResource Include="Resources\prior800d.bmp" />
+    <EmbeddedResource Include="Resources\prior800.bmp" />
+    <EmbeddedResource Include="Resources\print800d.bmp" />
+    <EmbeddedResource Include="Resources\print800.bmp" />
+    <EmbeddedResource Include="Resources\preview800d.bmp" />
+    <EmbeddedResource Include="Resources\preview800.bmp" />
+    <EmbeddedResource Include="Resources\next800d.bmp" />
+    <EmbeddedResource Include="Resources\next800.bmp" />
+    <EmbeddedResource Include="Resources\modify800d.bmp" />
+    <EmbeddedResource Include="Resources\modify800.bmp" />
+    <EmbeddedResource Include="Resources\exit800g.bmp" />
+    <EmbeddedResource Include="Resources\exit800d.bmp" />
+    <EmbeddedResource Include="Resources\exit800.bmp" />
+    <EmbeddedResource Include="Resources\execute800d.bmp" />
+    <EmbeddedResource Include="Resources\execute800.bmp" />
+    <EmbeddedResource Include="Resources\excel800d.bmp" />
+    <EmbeddedResource Include="Resources\excel800.bmp" />
+    <EmbeddedResource Include="Resources\duplicate800d.bmp" />
+    <EmbeddedResource Include="Resources\duplicate800.bmp" />
+    <EmbeddedResource Include="Resources\delete800d.bmp" />
+    <EmbeddedResource Include="Resources\delete800.bmp" />
+    <EmbeddedResource Include="Resources\code800d.bmp" />
+    <EmbeddedResource Include="Resources\code800.bmp" />
+    <EmbeddedResource Include="Resources\chart800d.bmp" />
+    <EmbeddedResource Include="Resources\chart800.bmp" />
+    <EmbeddedResource Include="Resources\cancel800d.bmp" />
+    <EmbeddedResource Include="Resources\cancel800.bmp" />
+    <EmbeddedResource Include="Resources\brow800d.bmp" />
+    <EmbeddedResource Include="Resources\brow800.bmp" />
+    <EmbeddedResource Include="Resources\bottom800d.bmp" />
+    <EmbeddedResource Include="Resources\bottom800.bmp" />
+    <EmbeddedResource Include="Resources\bar800d.bmp" />
+    <EmbeddedResource Include="Resources\bar800.bmp" />
+    <EmbeddedResource Include="Resources\append800d.bmp" />
+    <EmbeddedResource Include="Resources\append800.bmp" />
+    <EmbeddedResource Include="Resources\loginclose.bmp" />
+    <EmbeddedResource Include="Resources\help.bmp" />
+    <EmbeddedResource Include="Resources\背景.bmp" />
+    <EmbeddedResource Include="Resources\btn7.bmp" />
+    <EmbeddedResource Include="Resources\btn6.bmp" />
+    <EmbeddedResource Include="Resources\btn5.bmp" />
+    <EmbeddedResource Include="Resources\btn4.bmp" />
+    <EmbeddedResource Include="Resources\btn3.bmp" />
+    <EmbeddedResource Include="Resources\btn2.bmp" />
+    <EmbeddedResource Include="Resources\btn1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\單據作業normal.jpg" />
+    <None Include="Resources\清除.png" />
+    <None Include="Resources\多選.png" />
+    <None Include="Resources\bar1024d.bmp" />
+    <None Include="Resources\bar1024.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JC.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

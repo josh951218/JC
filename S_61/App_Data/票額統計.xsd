@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="票額統計" targetNamespace="http://tempuri.org/票額統計.xsd" xmlns:mstns="http://tempuri.org/票額統計.xsd" xmlns="http://tempuri.org/票額統計.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CHK1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CHK1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.S_61.Properties.Settings.GlobalReference.Default.CHK1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="chkiTableAdapter" GeneratorDataComponentClassName="chkiTableAdapter" Name="chki" UserDataComponentName="chkiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CHK1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+客戶編號='',廠商編號='',客戶簡稱='',廠商簡稱='',未處理=0.0,託收=0.0,託收兌現=0.0,現金兌現=0.0,應收轉付=0.0,票貼=0.0,退票=0.0,其他=0.0,票已領取=0.0,兌現=0.0,作廢=0.0,小計=0.0
+FROM CHKI</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="客戶編號" DataSetColumn="客戶編號" />
+              <Mapping SourceColumn="廠商編號" DataSetColumn="廠商編號" />
+              <Mapping SourceColumn="客戶簡稱" DataSetColumn="客戶簡稱" />
+              <Mapping SourceColumn="廠商簡稱" DataSetColumn="廠商簡稱" />
+              <Mapping SourceColumn="未處理" DataSetColumn="未處理" />
+              <Mapping SourceColumn="託收" DataSetColumn="託收" />
+              <Mapping SourceColumn="託收兌現" DataSetColumn="託收兌現" />
+              <Mapping SourceColumn="現金兌現" DataSetColumn="現金兌現" />
+              <Mapping SourceColumn="應收轉付" DataSetColumn="應收轉付" />
+              <Mapping SourceColumn="票貼" DataSetColumn="票貼" />
+              <Mapping SourceColumn="退票" DataSetColumn="退票" />
+              <Mapping SourceColumn="其他" DataSetColumn="其他" />
+              <Mapping SourceColumn="票已領取" DataSetColumn="票已領取" />
+              <Mapping SourceColumn="兌現" DataSetColumn="兌現" />
+              <Mapping SourceColumn="作廢" DataSetColumn="作廢" />
+              <Mapping SourceColumn="小計" DataSetColumn="小計" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="票額統計" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="票額統計" msprop:Generator_UserDSName="票額統計">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="chki" msprop:Generator_TableClassName="chkiDataTable" msprop:Generator_TableVarName="tablechki" msprop:Generator_TablePropName="chki" msprop:Generator_RowDeletingName="chkiRowDeleting" msprop:Generator_UserTableName="chki" msprop:Generator_RowChangingName="chkiRowChanging" msprop:Generator_RowEvHandlerName="chkiRowChangeEventHandler" msprop:Generator_RowDeletedName="chkiRowDeleted" msprop:Generator_RowEvArgName="chkiRowChangeEvent" msprop:Generator_RowChangedName="chkiRowChanged" msprop:Generator_RowClassName="chkiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="客戶編號" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column客戶編號" msprop:Generator_ColumnPropNameInRow="客戶編號" msprop:Generator_ColumnPropNameInTable="客戶編號Column" msprop:Generator_UserColumnName="客戶編號" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="廠商編號" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column廠商編號" msprop:Generator_ColumnPropNameInRow="廠商編號" msprop:Generator_ColumnPropNameInTable="廠商編號Column" msprop:Generator_UserColumnName="廠商編號" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="客戶簡稱" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column客戶簡稱" msprop:Generator_ColumnPropNameInRow="客戶簡稱" msprop:Generator_ColumnPropNameInTable="客戶簡稱Column" msprop:Generator_UserColumnName="客戶簡稱" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="廠商簡稱" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column廠商簡稱" msprop:Generator_ColumnPropNameInRow="廠商簡稱" msprop:Generator_ColumnPropNameInTable="廠商簡稱Column" msprop:Generator_UserColumnName="廠商簡稱" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="未處理" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column未處理" msprop:Generator_ColumnPropNameInRow="未處理" msprop:Generator_ColumnPropNameInTable="未處理Column" msprop:Generator_UserColumnName="未處理" type="xs:decimal" minOccurs="0" />
+              <xs:element name="託收" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column託收" msprop:Generator_ColumnPropNameInRow="託收" msprop:Generator_ColumnPropNameInTable="託收Column" msprop:Generator_UserColumnName="託收" type="xs:decimal" minOccurs="0" />
+              <xs:element name="託收兌現" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column託收兌現" msprop:Generator_ColumnPropNameInRow="託收兌現" msprop:Generator_ColumnPropNameInTable="託收兌現Column" msprop:Generator_UserColumnName="託收兌現" type="xs:decimal" minOccurs="0" />
+              <xs:element name="現金兌現" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column現金兌現" msprop:Generator_ColumnPropNameInRow="現金兌現" msprop:Generator_ColumnPropNameInTable="現金兌現Column" msprop:Generator_UserColumnName="現金兌現" type="xs:decimal" minOccurs="0" />
+              <xs:element name="應收轉付" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column應收轉付" msprop:Generator_ColumnPropNameInRow="應收轉付" msprop:Generator_ColumnPropNameInTable="應收轉付Column" msprop:Generator_UserColumnName="應收轉付" type="xs:decimal" minOccurs="0" />
+              <xs:element name="票貼" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column票貼" msprop:Generator_ColumnPropNameInRow="票貼" msprop:Generator_ColumnPropNameInTable="票貼Column" msprop:Generator_UserColumnName="票貼" type="xs:decimal" minOccurs="0" />
+              <xs:element name="退票" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column退票" msprop:Generator_ColumnPropNameInRow="退票" msprop:Generator_ColumnPropNameInTable="退票Column" msprop:Generator_UserColumnName="退票" type="xs:decimal" minOccurs="0" />
+              <xs:element name="其他" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column其他" msprop:Generator_ColumnPropNameInRow="其他" msprop:Generator_ColumnPropNameInTable="其他Column" msprop:Generator_UserColumnName="其他" type="xs:decimal" minOccurs="0" />
+              <xs:element name="票已領取" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column票已領取" msprop:Generator_ColumnPropNameInRow="票已領取" msprop:Generator_ColumnPropNameInTable="票已領取Column" msprop:Generator_UserColumnName="票已領取" type="xs:decimal" minOccurs="0" />
+              <xs:element name="兌現" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column兌現" msprop:Generator_ColumnPropNameInRow="兌現" msprop:Generator_ColumnPropNameInTable="兌現Column" msprop:Generator_UserColumnName="兌現" type="xs:decimal" minOccurs="0" />
+              <xs:element name="作廢" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column作廢" msprop:Generator_ColumnPropNameInRow="作廢" msprop:Generator_ColumnPropNameInTable="作廢Column" msprop:Generator_UserColumnName="作廢" type="xs:decimal" minOccurs="0" />
+              <xs:element name="小計" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column小計" msprop:Generator_ColumnPropNameInRow="小計" msprop:Generator_ColumnPropNameInTable="小計Column" msprop:Generator_UserColumnName="小計" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

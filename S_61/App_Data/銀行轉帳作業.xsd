@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="銀行轉帳作業" targetNamespace="http://tempuri.org/銀行轉帳作業.xsd" xmlns:mstns="http://tempuri.org/銀行轉帳作業.xsd" xmlns="http://tempuri.org/銀行轉帳作業.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CHKConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CHKConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.S_61.Properties.Settings.GlobalReference.Default.CHKConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="carryTableAdapter" GeneratorDataComponentClassName="carryTableAdapter" Name="carry" UserDataComponentName="carryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CHKConnectionString (Settings)" DbObjectName="CHK.dbo.carry" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM dbo.carry</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="cano" DataSetColumn="cano" />
+              <Mapping SourceColumn="cono" DataSetColumn="cono" />
+              <Mapping SourceColumn="coname1" DataSetColumn="coname1" />
+              <Mapping SourceColumn="coname2" DataSetColumn="coname2" />
+              <Mapping SourceColumn="cadate" DataSetColumn="cadate" />
+              <Mapping SourceColumn="acno" DataSetColumn="acno" />
+              <Mapping SourceColumn="acname" DataSetColumn="acname" />
+              <Mapping SourceColumn="acname1" DataSetColumn="acname1" />
+              <Mapping SourceColumn="xa1name" DataSetColumn="xa1name" />
+              <Mapping SourceColumn="xa1par" DataSetColumn="xa1par" />
+              <Mapping SourceColumn="acnoi" DataSetColumn="acnoi" />
+              <Mapping SourceColumn="acnamei" DataSetColumn="acnamei" />
+              <Mapping SourceColumn="acname1i" DataSetColumn="acname1i" />
+              <Mapping SourceColumn="xa1namei" DataSetColumn="xa1namei" />
+              <Mapping SourceColumn="xa1pari" DataSetColumn="xa1pari" />
+              <Mapping SourceColumn="camny" DataSetColumn="camny" />
+              <Mapping SourceColumn="camemo" DataSetColumn="camemo" />
+              <Mapping SourceColumn="caacno" DataSetColumn="caacno" />
+              <Mapping SourceColumn="caflg1" DataSetColumn="caflg1" />
+              <Mapping SourceColumn="caflg2" DataSetColumn="caflg2" />
+              <Mapping SourceColumn="cadate_1" DataSetColumn="cadate_1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="銀行轉帳作業" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="銀行轉帳作業" msprop:Generator_UserDSName="銀行轉帳作業">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="carry" msprop:Generator_TableClassName="carryDataTable" msprop:Generator_TableVarName="tablecarry" msprop:Generator_TablePropName="carry" msprop:Generator_RowDeletingName="carryRowDeleting" msprop:Generator_UserTableName="carry" msprop:Generator_RowChangingName="carryRowChanging" msprop:Generator_RowEvHandlerName="carryRowChangeEventHandler" msprop:Generator_RowDeletedName="carryRowDeleted" msprop:Generator_RowEvArgName="carryRowChangeEvent" msprop:Generator_RowChangedName="carryRowChanged" msprop:Generator_RowClassName="carryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cano" msprop:Generator_ColumnVarNameInTable="columncano" msprop:Generator_ColumnPropNameInRow="cano" msprop:Generator_ColumnPropNameInTable="canoColumn" msprop:Generator_UserColumnName="cano">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cono" msprop:Generator_ColumnVarNameInTable="columncono" msprop:Generator_ColumnPropNameInRow="cono" msprop:Generator_ColumnPropNameInTable="conoColumn" msprop:Generator_UserColumnName="cono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coname1" msprop:Generator_ColumnVarNameInTable="columnconame1" msprop:Generator_ColumnPropNameInRow="coname1" msprop:Generator_ColumnPropNameInTable="coname1Column" msprop:Generator_UserColumnName="coname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="coname2" msprop:Generator_ColumnVarNameInTable="columnconame2" msprop:Generator_ColumnPropNameInRow="coname2" msprop:Generator_ColumnPropNameInTable="coname2Column" msprop:Generator_UserColumnName="coname2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cadate" msprop:Generator_ColumnVarNameInTable="columncadate" msprop:Generator_ColumnPropNameInRow="cadate" msprop:Generator_ColumnPropNameInTable="cadateColumn" msprop:Generator_UserColumnName="cadate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acno" msprop:Generator_ColumnVarNameInTable="columnacno" msprop:Generator_ColumnPropNameInRow="acno" msprop:Generator_ColumnPropNameInTable="acnoColumn" msprop:Generator_UserColumnName="acno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acname" msprop:Generator_ColumnVarNameInTable="columnacname" msprop:Generator_ColumnPropNameInRow="acname" msprop:Generator_ColumnPropNameInTable="acnameColumn" msprop:Generator_UserColumnName="acname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acname1" msprop:Generator_ColumnVarNameInTable="columnacname1" msprop:Generator_ColumnPropNameInRow="acname1" msprop:Generator_ColumnPropNameInTable="acname1Column" msprop:Generator_UserColumnName="acname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xa1name" msprop:Generator_ColumnVarNameInTable="columnxa1name" msprop:Generator_ColumnPropNameInRow="xa1name" msprop:Generator_ColumnPropNameInTable="xa1nameColumn" msprop:Generator_UserColumnName="xa1name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xa1par" msprop:Generator_ColumnVarNameInTable="columnxa1par" msprop:Generator_ColumnPropNameInRow="xa1par" msprop:Generator_ColumnPropNameInTable="xa1parColumn" msprop:Generator_UserColumnName="xa1par" type="xs:decimal" minOccurs="0" />
+              <xs:element name="acnoi" msprop:Generator_ColumnVarNameInTable="columnacnoi" msprop:Generator_ColumnPropNameInRow="acnoi" msprop:Generator_ColumnPropNameInTable="acnoiColumn" msprop:Generator_UserColumnName="acnoi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acnamei" msprop:Generator_ColumnVarNameInTable="columnacnamei" msprop:Generator_ColumnPropNameInRow="acnamei" msprop:Generator_ColumnPropNameInTable="acnameiColumn" msprop:Generator_UserColumnName="acnamei" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acname1i" msprop:Generator_ColumnVarNameInTable="columnacname1i" msprop:Generator_ColumnPropNameInRow="acname1i" msprop:Generator_ColumnPropNameInTable="acname1iColumn" msprop:Generator_UserColumnName="acname1i" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xa1namei" msprop:Generator_ColumnVarNameInTable="columnxa1namei" msprop:Generator_ColumnPropNameInRow="xa1namei" msprop:Generator_ColumnPropNameInTable="xa1nameiColumn" msprop:Generator_UserColumnName="xa1namei" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="xa1pari" msprop:Generator_ColumnVarNameInTable="columnxa1pari" msprop:Generator_ColumnPropNameInRow="xa1pari" msprop:Generator_ColumnPropNameInTable="xa1pariColumn" msprop:Generator_UserColumnName="xa1pari" type="xs:decimal" minOccurs="0" />
+              <xs:element name="camny" msprop:Generator_ColumnVarNameInTable="columncamny" msprop:Generator_ColumnPropNameInRow="camny" msprop:Generator_ColumnPropNameInTable="camnyColumn" msprop:Generator_UserColumnName="camny" type="xs:decimal" minOccurs="0" />
+              <xs:element name="camemo" msprop:Generator_ColumnVarNameInTable="columncamemo" msprop:Generator_ColumnPropNameInRow="camemo" msprop:Generator_ColumnPropNameInTable="camemoColumn" msprop:Generator_UserColumnName="camemo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="caacno" msprop:Generator_ColumnVarNameInTable="columncaacno" msprop:Generator_ColumnPropNameInRow="caacno" msprop:Generator_ColumnPropNameInTable="caacnoColumn" msprop:Generator_UserColumnName="caacno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="caflg1" msprop:Generator_ColumnVarNameInTable="columncaflg1" msprop:Generator_ColumnPropNameInRow="caflg1" msprop:Generator_ColumnPropNameInTable="caflg1Column" msprop:Generator_UserColumnName="caflg1" type="xs:boolean" minOccurs="0" />
+              <xs:element name="caflg2" msprop:Generator_ColumnVarNameInTable="columncaflg2" msprop:Generator_ColumnPropNameInRow="caflg2" msprop:Generator_ColumnPropNameInTable="caflg2Column" msprop:Generator_UserColumnName="caflg2" type="xs:boolean" minOccurs="0" />
+              <xs:element name="cadate_1" msprop:Generator_ColumnVarNameInTable="columncadate_1" msprop:Generator_ColumnPropNameInRow="cadate_1" msprop:Generator_ColumnPropNameInTable="cadate_1Column" msprop:Generator_UserColumnName="cadate_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

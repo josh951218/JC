@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="銀行資金預估作業" targetNamespace="http://tempuri.org/銀行資金預估作業.xsd" xmlns:mstns="http://tempuri.org/銀行資金預估作業.xsd" xmlns="http://tempuri.org/銀行資金預估作業.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CHK1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CHK1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.S_61.Properties.Settings.GlobalReference.Default.CHK1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="acctTableAdapter" GeneratorDataComponentClassName="acctTableAdapter" Name="acct" UserDataComponentName="acctTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CHK1ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select 帳戶編號='',帳戶名稱='',帳戶簡稱='',帳號='',預兌日='', 票態='',支票號碼='',客戶='',已收未兌=0.0,已付未兌=0.0,預估餘額=0.0,計算值=0.0 ,已收未兌筆數=0.0,已付未兌筆數=0.0,報表結餘金額=0.0 from acct</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="帳戶編號" DataSetColumn="帳戶編號" />
+              <Mapping SourceColumn="帳戶名稱" DataSetColumn="帳戶名稱" />
+              <Mapping SourceColumn="帳戶簡稱" DataSetColumn="帳戶簡稱" />
+              <Mapping SourceColumn="帳號" DataSetColumn="帳號" />
+              <Mapping SourceColumn="預兌日" DataSetColumn="預兌日" />
+              <Mapping SourceColumn="票態" DataSetColumn="票態" />
+              <Mapping SourceColumn="支票號碼" DataSetColumn="支票號碼" />
+              <Mapping SourceColumn="客戶" DataSetColumn="客戶" />
+              <Mapping SourceColumn="已收未兌" DataSetColumn="已收未兌" />
+              <Mapping SourceColumn="已付未兌" DataSetColumn="已付未兌" />
+              <Mapping SourceColumn="預估餘額" DataSetColumn="預估餘額" />
+              <Mapping SourceColumn="計算值" DataSetColumn="計算值" />
+              <Mapping SourceColumn="已收未兌筆數" DataSetColumn="已收未兌筆數" />
+              <Mapping SourceColumn="已付未兌筆數" DataSetColumn="已付未兌筆數" />
+              <Mapping SourceColumn="報表結餘金額" DataSetColumn="報表結餘金額" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="銀行資金預估作業" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="銀行資金預估作業" msprop:Generator_UserDSName="銀行資金預估作業">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="acct" msprop:Generator_TableClassName="acctDataTable" msprop:Generator_TableVarName="tableacct" msprop:Generator_TablePropName="acct" msprop:Generator_RowDeletingName="acctRowDeleting" msprop:Generator_UserTableName="acct" msprop:Generator_RowChangingName="acctRowChanging" msprop:Generator_RowEvHandlerName="acctRowChangeEventHandler" msprop:Generator_RowDeletedName="acctRowDeleted" msprop:Generator_RowEvArgName="acctRowChangeEvent" msprop:Generator_RowChangedName="acctRowChanged" msprop:Generator_RowClassName="acctRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="帳戶編號" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column帳戶編號" msprop:Generator_ColumnPropNameInRow="帳戶編號" msprop:Generator_ColumnPropNameInTable="帳戶編號Column" msprop:Generator_UserColumnName="帳戶編號" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="帳戶名稱" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column帳戶名稱" msprop:Generator_ColumnPropNameInRow="帳戶名稱" msprop:Generator_ColumnPropNameInTable="帳戶名稱Column" msprop:Generator_UserColumnName="帳戶名稱" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="帳戶簡稱" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column帳戶簡稱" msprop:Generator_ColumnPropNameInRow="帳戶簡稱" msprop:Generator_ColumnPropNameInTable="帳戶簡稱Column" msprop:Generator_UserColumnName="帳戶簡稱" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="帳號" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column帳號" msprop:Generator_ColumnPropNameInRow="帳號" msprop:Generator_ColumnPropNameInTable="帳號Column" msprop:Generator_UserColumnName="帳號" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="預兌日" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column預兌日" msprop:Generator_ColumnPropNameInRow="預兌日" msprop:Generator_ColumnPropNameInTable="預兌日Column" msprop:Generator_UserColumnName="預兌日" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="票態" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column票態" msprop:Generator_ColumnPropNameInRow="票態" msprop:Generator_ColumnPropNameInTable="票態Column" msprop:Generator_UserColumnName="票態" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="支票號碼" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column支票號碼" msprop:Generator_ColumnPropNameInRow="支票號碼" msprop:Generator_ColumnPropNameInTable="支票號碼Column" msprop:Generator_UserColumnName="支票號碼" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="客戶" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column客戶" msprop:Generator_ColumnPropNameInRow="客戶" msprop:Generator_ColumnPropNameInTable="客戶Column" msprop:Generator_UserColumnName="客戶" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="已收未兌" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column已收未兌" msprop:Generator_ColumnPropNameInRow="已收未兌" msprop:Generator_ColumnPropNameInTable="已收未兌Column" msprop:Generator_UserColumnName="已收未兌" type="xs:decimal" minOccurs="0" />
+              <xs:element name="已付未兌" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column已付未兌" msprop:Generator_ColumnPropNameInRow="已付未兌" msprop:Generator_ColumnPropNameInTable="已付未兌Column" msprop:Generator_UserColumnName="已付未兌" type="xs:decimal" minOccurs="0" />
+              <xs:element name="預估餘額" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column預估餘額" msprop:Generator_ColumnPropNameInRow="預估餘額" msprop:Generator_ColumnPropNameInTable="預估餘額Column" msprop:Generator_UserColumnName="預估餘額" type="xs:decimal" minOccurs="0" />
+              <xs:element name="計算值" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column計算值" msprop:Generator_ColumnPropNameInRow="計算值" msprop:Generator_ColumnPropNameInTable="計算值Column" msprop:Generator_UserColumnName="計算值" type="xs:decimal" minOccurs="0" />
+              <xs:element name="已收未兌筆數" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column已收未兌筆數" msprop:Generator_ColumnPropNameInRow="已收未兌筆數" msprop:Generator_ColumnPropNameInTable="已收未兌筆數Column" msprop:Generator_UserColumnName="已收未兌筆數" type="xs:decimal" minOccurs="0" />
+              <xs:element name="已付未兌筆數" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column已付未兌筆數" msprop:Generator_ColumnPropNameInRow="已付未兌筆數" msprop:Generator_ColumnPropNameInTable="已付未兌筆數Column" msprop:Generator_UserColumnName="已付未兌筆數" type="xs:decimal" minOccurs="0" />
+              <xs:element name="報表結餘金額" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="column報表結餘金額" msprop:Generator_ColumnPropNameInRow="報表結餘金額" msprop:Generator_ColumnPropNameInTable="報表結餘金額Column" msprop:Generator_UserColumnName="報表結餘金額" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

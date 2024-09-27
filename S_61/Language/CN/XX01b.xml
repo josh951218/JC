@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<zh-CN>
+  <btnQuery>F6:字符查询</btnQuery>
+  <btnGet>F9:取回</btnGet>
+  <btnExit>F11:结束</btnExit>
+  <lblX1No>类别编号:</lblX1No>
+  <lblX1Name>类别名称:</lblX1Name>
+</zh-CN>
